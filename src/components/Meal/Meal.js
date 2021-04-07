@@ -13,6 +13,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        margin: 'auto'
     },
     media: {
         height: 140,
@@ -42,10 +43,7 @@ const Meal = (props) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
-                        SEE
-                </Button>
-                    <Link to={`/meal/${idMeal}`}>
+                    <Link to={`/meal/${idMeal}`} style={{ textDecoration: 'none' }}>
                         <Button size="small" color="primary">
                             Details
                 </Button>

@@ -9,18 +9,17 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
+import './MealCategory.css'
 
 const useStyles = makeStyles({
     root: {
         maxWidth: 345,
+        margin: 'auto'
     },
     media: {
         height: 140,
-    },
+    }
 });
-const cardStyle = {
-    height: '45vh'
-}
 const MealCategory = (props) => {
     const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } = props.category;
     const classes = useStyles();
@@ -44,15 +43,11 @@ const MealCategory = (props) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Link to={`/category/${strCategory}`}>
+                    <Link to={`/category/${strCategory}`} style={{ textDecoration: 'none' }}>
                         <Button size="small" color="primary">
-                            {strCategory}
+                            see more
                         </Button>
                     </Link>
-
-                    <Button size="small" color="primary">
-                        SEE
-                </Button>
                 </CardActions>
             </Card>
         </Grid>
