@@ -12,6 +12,7 @@ import Meal from "./components/Meal/Meal";
 import MealHome from "./components/Meal/MealHome";
 import MealDetails from "./components/MealDetails/MealDetails";
 import DetailHome from "./components/MealDetails/Index";
+import BillingAddress from "./components/BillingAddress/BillingAddress";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/meal/:id">
           <DetailHome></DetailHome>
+        </Route>
+        <Route path="/billingAddress">
+          <BillingAddress></BillingAddress>
         </Route>
       </Switch>
     </Router>

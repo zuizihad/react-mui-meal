@@ -42,10 +42,15 @@ const Meal = (props) => {
                         </Typography>
                     </CardContent>
                 </CardActionArea>
-                <CardActions>
+                <CardActions style={{ justifyContent: 'space-between' }}>
                     <Link to={`/meal/${idMeal}`} style={{ textDecoration: 'none' }}>
                         <Button size="small" color="primary">
                             Details
+                </Button>
+                    </Link>
+                    <Link style={{ textDecoration: 'none' }}>
+                        <Button size="small" color="primary">
+                            add to cart
                 </Button>
                     </Link>
 
